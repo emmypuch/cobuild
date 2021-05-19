@@ -138,7 +138,71 @@
     </section>
 
     <section class="skill" id="skill">
-      <h3>fsjhfjfgs</h3>
+      <div class="skill-container">
+        <div class="skill-heading">
+          <h4>
+            We are expert in this field <br />
+            since almost 20 years.
+          </h4>
+          <p>
+            Proin gravida nibh vel velit auctor aliquet aenean sollicitudin,
+            <br />
+            lorem quis bibendum auctor, nisi elit cuat ipsum, nec sagittis
+            <br />
+            sem nibh id elit duis sed odio sit nibh vulputate cursus a sit amet
+            <br />
+            mauris morbi accumsan.
+          </p>
+        </div>
+
+        <div class="skill-progress">
+          <div class="skill-list">
+            <li>
+              <div
+                class="wrap"
+                style="display: flex; justify-content: space-between"
+              >
+                <h6>Buildings</h6>
+                <h6>80%</h6>
+              </div>
+              <span class="bar"><span class="building"></span></span>
+            </li>
+
+            <li>
+              <div
+                class="wrap"
+                style="display: flex; justify-content: space-between"
+              >
+                <h6>Architecture</h6>
+                <h6>60%</h6>
+              </div>
+              <span class="bar"><span class="archi"></span></span>
+            </li>
+
+            <li>
+              <div
+                class="wrap"
+                style="display: flex; justify-content: space-between"
+              >
+                <h6>Constructions</h6>
+                <h6>50%</h6>
+              </div>
+              <span class="bar"><span class="constru"></span></span>
+            </li>
+
+            <li>
+              <div
+                class="wrap"
+                style="display: flex; justify-content: space-between"
+              >
+                <h6>Planning</h6>
+                <h6>40%</h6>
+              </div>
+              <span class="bar"><span class="planning"></span></span>
+            </li>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="testimonial" id="testimonial">
@@ -429,6 +493,121 @@ div.image-content:hover .image {
 
 div.image-content:hover div.image-link {
   opacity: 1;
+}
+
+/* Skill Styling */
+
+div.skill-heading h4 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  color: #222;
+}
+
+div.skill-heading p {
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: #999;
+  padding-top: 2rem;
+}
+
+section.skill {
+  padding-top: 5rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 20rem;
+}
+
+div.skill-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+div.skill-list li {
+  margin: 20px 0;
+  list-style: none;
+}
+
+.bar {
+  display: block;
+  height: 10px;
+  border: 1px solid #222;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+.bar span {
+  height: 10px;
+  background: #f5af00;
+  float: left;
+}
+
+.building {
+  width: 80%;
+  animation: building 2s;
+}
+
+.archi {
+  width: 60%;
+  animation: archi 2s;
+}
+
+.constru {
+  width: 50%;
+  animation: constru 2s;
+}
+
+.planning {
+  width: 40%;
+  animation: planning 2s;
+}
+
+@keyframes building {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes archi {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes constru {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes planning {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 40%;
+  }
+}
+
+div.wrap h6 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
 }
 
 /* Responsiveness Styling */
