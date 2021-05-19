@@ -395,7 +395,6 @@ div.work-image-container {
 }
 
 div.image-content {
-  /* position: relative; */
   width: 50%;
   margin: 1rem;
 }
@@ -419,8 +418,7 @@ div.image-link {
   opacity: 0;
   position: absolute;
   top: 50%;
-  left: 0;
-  right: 60em;
+  left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
