@@ -27,7 +27,53 @@
         </section>
 
         <section class="services" id="service">
-            <h3>fsjhfjfgs</h3>
+            <div class="service-heading">
+                <h3>Our Services</h3>
+            <p>
+                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris morbi accumsan <br> ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+            </p>
+            </div>
+            <div class="service-icons-container">
+                <div class="icon-content">
+                    <div class="icon">
+                        <img src="/images/excavator.svg" alt="">
+                    </div>
+                    <div class="icon-heading">
+                        <h5>Fast Operations</h5>
+                        <p>Cobuild impresses you with fully <br> responsiveness and highly <br> customization</p>
+                    </div>
+                </div>
+
+                <div class="icon-content">
+                    <div class="icon">
+                        <img src="/images/excavator.svg" alt="">
+                    </div>
+                    <div class="icon-heading">
+                        <h5>Fast Operations</h5>
+                        <p>Cobuild impresses you with fully <br> responsiveness and highly <br> customization</p>
+                    </div>
+                </div>
+
+                <div class="icon-content">
+                    <div class="icon">
+                        <img src="/images/excavator.svg" alt="">
+                    </div>
+                    <div class="icon-heading">
+                        <h5>Fast Operations</h5>
+                        <p>Cobuild impresses you with fully <br> responsiveness and highly <br> customization</p>
+                    </div>
+                </div>
+
+                <div class="icon-content">
+                    <div class="icon">
+                        <img src="/images/excavator.svg" alt="">
+                    </div>
+                    <div class="icon-heading">
+                        <h5>Fast Operations</h5>
+                        <p>Cobuild impresses you with fully <br> responsiveness and highly <br> customization</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="work" id="work">
@@ -187,9 +233,8 @@ div.par p {
     text-align: center;
     margin-top: 4em;
     font-size: 1.2rem;
-    color: #222;
+    color: #999;
     font-weight: 300;
-    line-height: 2px;
     letter-spacing: 1px;
 }
 
@@ -221,6 +266,59 @@ div.link a:hover {
     background: #222;
     color: #fff;
     border: 2px solid #222;
+}
+
+
+/* Services styling */
+
+section.services {
+   padding-top: 5rem; 
+   padding-left: 6rem;
+   padding-right: 6rem;
+   padding-bottom: 25rem;
+}
+
+div.service-heading h3 {
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #222;
+}
+
+div.service-heading p {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding-top: 1.2rem;
+    color: #999;
+}
+
+div.service-icons-container {
+    margin: 3rem;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.icon img {
+    width: 60px;
+}
+
+div.icon-heading h5 {
+    color: #222;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-top: 1rem;
+}
+
+div.icon-heading p {
+    color: #999;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    padding-top: 1rem;
 }
 
 @media screen and (max-width: 768px) {
