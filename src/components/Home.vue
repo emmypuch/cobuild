@@ -5,16 +5,16 @@
                 <a href="#">CoBuiLD</a>
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">testimonials</a></li>
-                <li><a href="#">Map</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#testimonial">Testimonials</a></li>
+                <li><a href="#map">Map</a></li>
             </ul>
         </nav>
 
-        <section class="hero" id="hero">
+        <section class="hero" id="home">
             <div class="header-hero">
                 <h2>We're Building Your Future</h2> 
                 <div class="par">
@@ -26,7 +26,7 @@
             </div>
         </section>
 
-        <section class="services" id="services">
+        <section class="services" id="service">
             <h3>fsjhfjfgs</h3>
         </section>
 
@@ -137,6 +137,22 @@ nav#mainNav ul li a:hover {
     color: #F5AF00;
 }
 
+@media screen and (max-width:768px) {
+   nav#mainNav {
+        padding: 1.4em;
+    }
+
+  nav#mainNav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    } 
+}
+
+
+
+/* Section styling */
+
 section:nth-of-type(1) {
     margin-top: 84px;
 }
@@ -160,7 +176,7 @@ section.hero {
 
 section.hero h2 {
     padding-top: 1em;
-    font-size: 4em;
+    font-size: 4rem;
     color: #222;
     font-weight: 300;
     line-height: 2px;
@@ -170,7 +186,7 @@ section.hero h2 {
 div.par p {
     text-align: center;
     margin-top: 4em;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     color: #222;
     font-weight: 300;
     line-height: 2px;
@@ -189,7 +205,7 @@ div.link a {
     font-weight: 300;
     line-height: 2px;
     letter-spacing: 1px;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     text-transform: uppercase;
     background: #F5AF00;
     color: #fff;
@@ -205,5 +221,53 @@ div.link a:hover {
     background: #222;
     color: #fff;
     border: 2px solid #222;
+}
+
+@media screen and (max-width: 768px) {
+    section.hero {
+        padding: 15em 0.4em; 
+    }
+
+    section.hero h2 {
+        padding-top: 1em;
+        font-size: 2.2rem;
+        line-height: 0;
+        letter-spacing: 0;
+        text-align: center;
+    }
+
+    div.par p {
+        font-size: 0.9rem;
+        line-height: 0;
+        letter-spacing: 0;
+    }   
+}
+
+@media screen and (max-width: 424px) {
+    section.hero {
+        padding: 15em 0.2em; 
+    }
+
+    section.hero h2 {
+        font-size: 1.7rem;
+    }
+
+    div.par p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    section.hero {
+        padding: 15em 0.2em; 
+    }
+
+    section.hero h2 {
+        font-size: 1.2rem;
+    }
+
+    div.par p {
+        font-size: 0.6rem;
+    }
 }
 </style>
