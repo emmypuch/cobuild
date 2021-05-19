@@ -213,7 +213,34 @@
     </div>
 
     <section class="testimonial" id="testimonial">
-      <h3>fsjhfjfgs</h3>
+      <div class="testimonial-heading">
+        <h3>Our Clients Say</h3>
+        <p>
+          Duis aute irure dolor in reprehenderit volupte velit esse cillum
+          fugiat <br />
+          pariature occaecat cupidatat proident culpa.
+        </p>
+      </div>
+
+      <div class="testimonial-content">
+        <div class="content1">
+          <h4>
+            “It’s just brilliant. I will recommend Cobuild to <br />
+            everyone I know! I’m really glad to these guys got <br />
+            Cobuild out there.”
+          </h4>
+          <p>John Doe</p>
+        </div>
+
+        <div class="content1">
+          <h4>
+            “We are so excited to launch our new company, By <br />
+            using Cobuild it has a great features, I think you <br />
+            are all about to make me happy.”
+          </h4>
+          <p>John Doe</p>
+        </div>
+      </div>
     </section>
 
     <section class="map" id="map">
@@ -245,6 +272,29 @@ export default {
         mainNav.classList.remove("txt-white");
       }
     });
+
+    const testimonialPage = document.querySelector(
+      ".quotes-slide[data-slider-slide-index='1']"
+    );
+    testimonialPage.classList.add("quotes-slide--active");
+
+    document.querySelector(".quotes").addEventListener("mouseout", function() {
+      document
+        .querySelector(".quotes-slide--active")
+        .classList.remove("quotes-slide--active");
+      document
+        .querySelector(".quotes-slide[data-slider-slide-index='1']")
+        .classList.add("quotes-slide--active");
+    });
+
+    document.querySelectorAll(".quotes-slide").forEach((elem) =>
+      elem.addEventListener("mouseover", function() {
+        document
+          .querySelector(".quotes-slide--active")
+          .classList.remove("quotes-slide--active");
+        this.classList.add("quotes-slide--active");
+      })
+    );
   },
 };
 </script>
@@ -655,6 +705,49 @@ div.background-content a {
 div.background-content a:hover {
   background: #fff;
   color: #f5af00;
+}
+
+/* Testimonial Styling */
+section.testimonial {
+  padding-top: 5rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 25rem;
+}
+
+div.testimonial-heading h3 {
+  text-align: center;
+  color: #222;
+  font-weight: 300;
+  font-size: 2.3rem;
+  letter-spacing: 1px;
+}
+
+div.testimonial-heading p {
+  text-align: center;
+  color: #999;
+  font-size: 0.9rem;
+  padding-top: 1rem;
+}
+
+div.testimonial-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.5rem;
+}
+
+div.content1 h4 {
+  font-size: 1.4rem;
+  font-weight: 100;
+  font-style: italic;
+  color: #999;
+}
+
+div.content1 p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #222;
+  padding-top: 1rem;
 }
 
 /* Responsiveness Styling */
