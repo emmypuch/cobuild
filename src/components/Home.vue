@@ -95,7 +95,60 @@
     </section>
 
     <section class="work" id="work">
-      <h3>fsjhfjfgs</h3>
+      <div class="work-heading">
+        <h3>Featured Work</h3>
+        <p>
+          Duis aute irure dolor in reprehenderit volupte velit esse cillum
+          fugiat
+          <br />
+          pariature occaecat cupidatat proident culpa.
+        </p>
+      </div>
+      <div class="work-image-container">
+        <div class="image-content">
+          <img src="/images/1.jpeg" alt="" class="image" />
+          <div class="image-link">
+            <div class="link-container">
+              <a href="#">Tower Building</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-content">
+          <img src="/images/2.jpeg" alt="" class="image" />
+          <div class="image-link">
+            <a href="#">Tower Building</a>
+          </div>
+        </div>
+
+        <div class="image-content">
+          <img src="/images/3.jpeg" alt="" class="image" />
+          <div class="image-link">
+            <a href="#">Tower Building</a>
+          </div>
+        </div>
+
+        <div class="image-content">
+          <img src="/images/4.jpeg" alt="" class="image" />
+          <div class="image-link">
+            <a href="#">Tower Building</a>
+          </div>
+        </div>
+
+        <div class="image-content">
+          <img src="/images/5.jpeg" alt="" class="image" />
+          <div class="image-link">
+            <a href="#">Tower Building</a>
+          </div>
+        </div>
+
+        <div class="image-content">
+          <img src="/images/6.jpeg" alt="" class="image" />
+          <div class="image-link">
+            <a href="#">Tower Building</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="skill" id="skill">
@@ -290,7 +343,8 @@ section.services {
   padding-bottom: 25rem;
 }
 
-div.service-heading h3 {
+div.service-heading h3,
+div.work-heading h3 {
   text-align: center;
   font-size: 2.3rem;
   font-weight: 300;
@@ -298,7 +352,8 @@ div.service-heading h3 {
   color: #222;
 }
 
-div.service-heading p {
+div.service-heading p,
+div.work-heading p {
   text-align: center;
   font-size: 0.9rem;
   font-weight: 200;
@@ -335,6 +390,71 @@ div.icon-heading p {
   font-size: 0.8rem;
   padding-top: 1rem;
 }
+
+/* Work styling */
+
+section.work {
+  padding-top: 5rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 65rem;
+}
+
+div.work-image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+div.image-content {
+  position: relative;
+  width: 50%;
+}
+
+div.image-content img {
+  width: 350px;
+  height: auto;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+div.image-link {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 60em;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+div.image-content:hover .image {
+  opacity: 0.3;
+}
+
+div.image-content:hover div.image-link {
+  opacity: 1;
+}
+
+div.link-container a {
+  text-decoration: none;
+  color: #222;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center !important;
+}
+
+/* Responsiveness Styling */
 
 @media screen and (max-width: 768px) {
   section.hero {
@@ -397,6 +517,8 @@ div.icon-heading p {
   div.icon-heading p {
     text-align: center;
   }
+
+  /* work */
 }
 
 @media screen and (max-width: 424px) {
