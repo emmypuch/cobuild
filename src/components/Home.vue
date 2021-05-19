@@ -702,6 +702,34 @@ div.wrap h6 {
   div.image-content img {
     width: 300px;
   }
+
+  /* Skills */
+
+  section.skill {
+    padding-top: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 30rem;
+  }
+
+  div.skill-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.skill-heading h4 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  div.skill-heading p {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  div.skill-progress {
+    padding-top: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 424px) {
@@ -795,6 +823,23 @@ div.wrap h6 {
   }
 
   div.work-heading p {
+    font-size: 0.5rem;
+  }
+
+  /* skills */
+
+  section.skill {
+    padding-top: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 30rem;
+  }
+
+  div.skill-heading h4 {
+    font-size: 1.2rem;
+  }
+
+  div.skill-heading p {
     font-size: 0.5rem;
   }
 }
