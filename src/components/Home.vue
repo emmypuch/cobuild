@@ -107,46 +107,32 @@
       <div class="work-image-container">
         <div class="image-content">
           <img src="/images/1.jpeg" alt="" class="image" />
-          <div class="image-link">
-            <div class="link-container">
-              <a href="#">Tower Building</a>
-            </div>
-          </div>
+          <div class="image-link"></div>
         </div>
 
         <div class="image-content">
           <img src="/images/2.jpeg" alt="" class="image" />
-          <div class="image-link">
-            <a href="#">Tower Building</a>
-          </div>
+          <div class="image-link"></div>
         </div>
 
         <div class="image-content">
           <img src="/images/3.jpeg" alt="" class="image" />
-          <div class="image-link">
-            <a href="#">Tower Building</a>
-          </div>
+          <div class="image-link"></div>
         </div>
 
         <div class="image-content">
           <img src="/images/4.jpeg" alt="" class="image" />
-          <div class="image-link">
-            <a href="#">Tower Building</a>
-          </div>
+          <div class="image-link"></div>
         </div>
 
         <div class="image-content">
           <img src="/images/5.jpeg" alt="" class="image" />
-          <div class="image-link">
-            <a href="#">Tower Building</a>
-          </div>
+          <div class="image-link"></div>
         </div>
 
         <div class="image-content">
           <img src="/images/6.jpeg" alt="" class="image" />
-          <div class="image-link">
-            <a href="#">Tower Building</a>
-          </div>
+          <div class="image-link"></div>
         </div>
       </div>
     </section>
@@ -409,12 +395,13 @@ div.work-image-container {
 }
 
 div.image-content {
-  position: relative;
+  /* position: relative; */
   width: 50%;
+  margin: 1rem;
 }
 
 div.image-content img {
-  width: 350px;
+  width: 380px;
   height: auto;
 }
 
@@ -446,14 +433,6 @@ div.image-content:hover div.image-link {
   opacity: 1;
 }
 
-div.link-container a {
-  text-decoration: none;
-  color: #222;
-  font-size: 1rem;
-  font-weight: 400;
-  text-align: center !important;
-}
-
 /* Responsiveness Styling */
 
 @media screen and (max-width: 768px) {
@@ -483,11 +462,13 @@ div.link-container a {
     padding-bottom: 65rem;
   }
 
-  div.service-heading h3 {
+  div.service-heading h3,
+  div.work-heading h3 {
     font-size: 2rem;
   }
 
-  div.service-heading p {
+  div.service-heading p,
+  div.work-heading p {
     font-size: 0.587rem;
   }
 
@@ -519,6 +500,31 @@ div.link-container a {
   }
 
   /* work */
+
+  section.work {
+    padding-top: 5rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 110rem;
+  }
+
+  div.work-image-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.image-content {
+    /* position: relative; */
+    width: 70%;
+    margin: 0.8rem;
+  }
+
+  div.image-content img {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 424px) {
@@ -533,15 +539,36 @@ div.link-container a {
   div.par p {
     font-size: 0.8rem;
   }
+
+  /* Work */
+
+  section.work {
+    padding-top: 5rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 300rem;
+  }
+
+  div.image-content {
+    width: 125%;
+  }
+
+  div.image-content img {
+    width: 310px;
+  }
+
+  div.work-heading p {
+    font-size: 0.585rem;
+  }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
   section.hero {
     padding: 15em 0.2em;
   }
 
   section.hero h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   div.par p {
@@ -563,6 +590,35 @@ div.link-container a {
 
   div.icon-heading p {
     font-size: 0.6rem;
+  }
+
+  /* Work */
+
+  section.work {
+    padding-top: 5rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 85rem;
+  }
+
+  div.image-content {
+    width: 70%;
+  }
+
+  div.image-content img {
+    width: 220px;
+  }
+
+  div.work-heading p {
+    font-size: 0.585rem;
+  }
+
+  div.work-heading h3 {
+    font-size: 0.9rem;
+  }
+
+  div.work-heading p {
+    font-size: 0.5rem;
   }
 }
 </style>
