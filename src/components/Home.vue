@@ -46,7 +46,7 @@
 
                 <div class="icon-content">
                     <div class="icon">
-                        <img src="/images/excavator.svg" alt="">
+                        <img src="/images/crane.png" alt="">
                     </div>
                     <div class="icon-heading">
                         <h5>Fast Operations</h5>
@@ -56,7 +56,7 @@
 
                 <div class="icon-content">
                     <div class="icon">
-                        <img src="/images/excavator.svg" alt="">
+                        <img src="/images/helmet.svg" alt="">
                     </div>
                     <div class="icon-heading">
                         <h5>Fast Operations</h5>
@@ -66,7 +66,7 @@
 
                 <div class="icon-content">
                     <div class="icon">
-                        <img src="/images/excavator.svg" alt="">
+                        <img src="/images/skyline.png" alt="">
                     </div>
                     <div class="icon-heading">
                         <h5>Fast Operations</h5>
@@ -302,6 +302,10 @@ div.service-icons-container {
     justify-content: space-between;
 }
 
+div.icon {
+    text-align: center;
+}
+
 div.icon img {
     width: 60px;
 }
@@ -312,6 +316,7 @@ div.icon-heading h5 {
     font-weight: 400;
     letter-spacing: 1px;
     padding-top: 1rem;
+    text-align: center;
 }
 
 div.icon-heading p {
@@ -319,6 +324,7 @@ div.icon-heading p {
     font-size: 0.8rem;
     letter-spacing: 1px;
     padding-top: 1rem;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
