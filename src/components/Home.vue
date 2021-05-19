@@ -205,6 +205,13 @@
       </div>
     </section>
 
+    <div class="background-container">
+      <div class="background-content">
+        <h4>An innovative company working with the latest technologies</h4>
+        <a href="#">Get A Quote</a>
+      </div>
+    </div>
+
     <section class="testimonial" id="testimonial">
       <h3>fsjhfjfgs</h3>
     </section>
@@ -427,7 +434,7 @@ div.icon img {
 }
 
 div.icon-heading h5 {
-  color: #222;
+  color: #f5af00;
   font-size: 1.1rem;
   font-weight: 400;
   letter-spacing: 1px;
@@ -439,6 +446,7 @@ div.icon-heading p {
   color: #999;
   font-size: 0.8rem;
   padding-top: 1rem;
+  text-align: center;
 }
 
 /* Work styling */
@@ -610,23 +618,62 @@ div.wrap h6 {
   padding-bottom: 1rem;
 }
 
+/* Background styling */
+
+div.background-container {
+  background: #f5af00;
+  padding-top: 5rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 5rem;
+}
+
+div.background-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+div.background-content h4 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+div.background-content a {
+  padding: 15px 40px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 300;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.4s;
+}
+
+div.background-content a:hover {
+  background: #fff;
+  color: #f5af00;
+}
+
 /* Responsiveness Styling */
 
 @media screen and (max-width: 768px) {
   section.hero {
-    padding: 15em 0.4em;
+    padding: 16em 0.6em;
   }
 
   section.hero h2 {
     padding-top: 1em;
-    font-size: 2.2rem;
+    font-size: 1.9rem;
     line-height: 0;
     letter-spacing: 0;
     text-align: center;
   }
 
   div.par p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     line-height: 0;
     letter-spacing: 0;
   }
@@ -636,7 +683,7 @@ div.wrap h6 {
     padding-top: 5rem;
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-bottom: 65rem;
+    padding-bottom: 70rem;
   }
 
   div.service-heading h3,
@@ -646,7 +693,8 @@ div.wrap h6 {
 
   div.service-heading p,
   div.work-heading p {
-    font-size: 0.587rem;
+    font-size: 0.5rem;
+    padding-bottom: 1rem;
   }
 
   div.service-icons-container {
@@ -694,7 +742,6 @@ div.wrap h6 {
   }
 
   div.image-content {
-    /* position: relative; */
     width: 70%;
     margin: 0.8rem;
   }
@@ -718,17 +765,44 @@ div.wrap h6 {
   }
 
   div.skill-heading h4 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: center;
   }
 
   div.skill-heading p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     text-align: center;
   }
 
   div.skill-progress {
     padding-top: 1.2rem;
+  }
+
+  /* Background */
+
+  div.background-container {
+    padding-top: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 5rem;
+  }
+
+  div.background-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.background-content h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  div.background-content a {
+    padding: 15px 40px;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 1.2rem;
   }
 }
 
@@ -782,7 +856,7 @@ div.wrap h6 {
 
   /* services */
   section.services {
-    padding-bottom: 60rem;
+    padding-bottom: 65rem;
   }
 
   div.service-heading h3 {
@@ -836,11 +910,21 @@ div.wrap h6 {
   }
 
   div.skill-heading h4 {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
 
   div.skill-heading p {
-    font-size: 0.5rem;
+    font-size: 0.4rem;
+  }
+
+  /* background */
+
+  div.background-content h4 {
+    font-size: 1rem;
+  }
+
+  div.background-content a {
+    font-size: 0.8rem;
   }
 }
 </style>
