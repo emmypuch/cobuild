@@ -2,7 +2,7 @@
     <div class="home">
         <nav id="mainNav">
             <div class="logo">
-                <a href="#">CoBuild</a>
+                <a href="#">CoBuiLD</a>
             </div>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -15,7 +15,15 @@
         </nav>
 
         <section class="hero" id="hero">
-            <h3>fkjhnsjfgdsfsfg k</h3>
+            <div class="header-hero">
+                <h2>We're Building Your Future</h2> 
+                <div class="par">
+                    <p>Take a step towards the future of construction with Cobuild</p>
+                </div>
+                <div class="link">
+                    <a href="#">Get A Quote</a>
+                </div>
+            </div>
         </section>
 
         <section class="services" id="services">
@@ -48,6 +56,22 @@ export default {
         return {
             msg: "Hello world"
         }
+    },
+    mounted() {
+        window.addEventListener("scroll", function() {
+            const logo = document.querySelectorAll(".logo")[0];
+            const mainNav = document.querySelector("#mainNav");
+
+            if(window.pageYOffset > 0) {
+                logo.style.height = "64px";
+                mainNav.classList.add('bg-yellow');
+                mainNav.classList.add('txt-white');
+            } else {
+                logo.style.height = "84px";
+                mainNav.classList.remove('bg-yellow');
+                mainNav.classList.remove('txt-white');
+            }
+        });
     }
 }
 </script>
@@ -57,7 +81,7 @@ export default {
 nav#mainNav {
     display: flex;
     justify-content: space-between;
-    padding: 0px 16px;
+    padding: 1em 7em;
     position: fixed;
     width: 100%;
     top: 0px;
@@ -66,8 +90,30 @@ nav#mainNav {
 }
 
 nav#mainNav .logo {
-    font-size: 1.3em;
-    transition: font-size 0.4s;
+    font-size: 1.5em;
+    transition: height 0.4s;
+    height: 84px;
+    padding-top: 0.9em;
+    
+}
+
+nav#mainNav .logo a {
+    /* color: #F5AF00 !important; */
+    transition: color 0.4s;
+    color: #F5AF00;
+    text-decoration: none;
+}
+
+.bg-yellow {
+    background: #F5AF00 !important;
+}
+
+.txt-white a {
+    color: #fff !important;
+}
+
+.txt-white a:hover {
+    color: #000 !important;
 }
 
 nav#mainNav ul {
@@ -75,15 +121,20 @@ nav#mainNav ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 400px;
+    width: 500px;
 }
 
 nav#mainNav ul li a {
     text-decoration: none;
     transition: color 0.4s;
-    font-weight: 300;
-    font-size: 1em;
+    font-weight: 200;
+    font-size: 0.8em;
     color: #000;
+    text-transform: uppercase;
+}
+
+nav#mainNav ul li a:hover {
+    color: #F5AF00;
 }
 
 section:nth-of-type(1) {
@@ -97,5 +148,62 @@ section {
 
 section:nth-of-type(odd) {
     background: #eee;
+}
+
+section.hero {
+   padding: 15em 7em; 
+   display: flex;
+   justify-content: center;
+   vertical-align: center;
+   align-items: center;
+}
+
+section.hero h2 {
+    padding-top: 1em;
+    font-size: 4em;
+    color: #222;
+    font-weight: 300;
+    line-height: 2px;
+    letter-spacing: 2px;
+}
+
+div.par p {
+    text-align: center;
+    margin-top: 4em;
+    font-size: 1.2em;
+    color: #222;
+    font-weight: 300;
+    line-height: 2px;
+    letter-spacing: 1px;
+}
+
+div.link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 3em;
+}
+
+div.link a {
+    text-decoration: none;
+    font-weight: 300;
+    line-height: 2px;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    background: #F5AF00;
+    color: #fff;
+    padding: 20px 35px;
+    border: 2px solid #F5AF00;
+    border-radius: 50px;
+    outline: none;
+    text-align: center;
+    transition: background 0.4s;
+}
+
+div.link a:hover {
+    background: #222;
+    color: #fff;
+    border: 2px solid #222;
 }
 </style>
