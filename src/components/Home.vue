@@ -12,6 +12,9 @@
         <li><a href="#testimonial">Testimonials</a></li>
         <li><a href="#map">Map</a></li>
       </ul>
+      <button class="nav-toggler">
+        <span></span>
+      </button>
     </nav>
 
     <section class="hero" id="home">
@@ -436,15 +439,61 @@ nav#mainNav ul li a:hover {
   color: #f5af00;
 }
 
+.nav-toggler {
+  border: 3px solid #f5af00;
+  padding: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  height: 39px;
+  display: none;
+  width: 45px;
+}
+
+.nav-toggler span,
+.nav-toggler span:before,
+.nav-toggler span:after {
+  width: 28px;
+  height: 3px;
+  background-color: #f5af00;
+  display: block;
+  transition: 0.3s;
+}
+
+.nav-toggler span:before {
+  content: "";
+  transform: translateY(-9px);
+}
+
+.nav-toggler span:after {
+  content: "";
+  transform: translateY(6px);
+}
+
+.nav-toggler.toggler-open span {
+  background-color: transparent;
+}
+
+.nav-toggler.toggler-open span:before {
+  transform: translateY(0px) rotate(45deg);
+}
+
+.nav-toggler.toggler-open span:after {
+  transform: translateY(-3px) rotate(-45deg);
+}
+
 @media screen and (max-width: 768px) {
   nav#mainNav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding: 1.4em;
   }
 
   nav#mainNav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    display: none;
+  }
+
+  .nav-toggler {
+    display: block;
   }
 }
 
@@ -583,7 +632,7 @@ section.work {
   padding-top: 5rem;
   padding-left: 6rem;
   padding-right: 6rem;
-  padding-bottom: 65rem !important;
+  padding-bottom: 65rem;
 }
 
 div.work-image-container {
@@ -600,7 +649,7 @@ div.image-content {
 }
 
 div.image-content img {
-  width: 380px !important;
+  width: 380px;
   height: auto;
 }
 
@@ -922,7 +971,7 @@ div.footer-social li a img {
 
   /* work */
 
-  section.work {
+  /* section.work {
     padding-left: 3rem;
     padding-right: 3rem;
     padding-bottom: 55rem;
@@ -935,7 +984,7 @@ div.footer-social li a img {
 
   div.image-content img {
     width: 300px;
-  }
+  } */
 
   /* services */
 
