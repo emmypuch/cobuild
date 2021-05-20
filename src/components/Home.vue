@@ -35,6 +35,7 @@
           ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
         </p>
       </div>
+
       <div class="service-icons-container">
         <div class="icon-content">
           <div class="icon">
@@ -55,7 +56,7 @@
             <img src="/images/crane.png" alt="" />
           </div>
           <div class="icon-heading">
-            <h5>Fast Operations</h5>
+            <h5>Renovation</h5>
             <p>
               Cobuild impresses you with fully <br />
               responsiveness and highly <br />
@@ -69,7 +70,7 @@
             <img src="/images/helmet.svg" alt="" />
           </div>
           <div class="icon-heading">
-            <h5>Fast Operations</h5>
+            <h5>Consultation</h5>
             <p>
               Cobuild impresses you with fully <br />
               responsiveness and highly <br />
@@ -83,7 +84,7 @@
             <img src="/images/skyline.png" alt="" />
           </div>
           <div class="icon-heading">
-            <h5>Fast Operations</h5>
+            <h5>Architecture</h5>
             <p>
               Cobuild impresses you with fully <br />
               responsiveness and highly <br />
@@ -244,7 +245,61 @@
     </section>
 
     <section class="map" id="map">
-      <h3>fsjhfjfgs</h3>
+      <div class="map-container">
+        <div class="map-image">
+          <img src="/images/icon_error.png" alt="" />
+        </div>
+        <div class="map-par">
+          <h6>Oops! Something went wrong.</h6>
+          <p>
+            This page didn't load Google Maps correctly. See the JavaScript
+            console for technical details.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="map">
+      <div class="service-icons-container">
+        <div class="icon-content">
+          <div class="icon">
+            <img src="/images/house.png" alt="" />
+          </div>
+          <div class="icon-heading">
+            <h5>Address</h5>
+            <p>
+              220 Petersham town, Wardell <br />
+              street, Australia PA 6550.
+            </p>
+          </div>
+        </div>
+
+        <div class="icon-content">
+          <div class="icon">
+            <img src="/images/tel.png" alt="" />
+          </div>
+          <div class="icon-heading">
+            <h5>Phone</h5>
+            <p>
+              Phone: (04) 491 570 110 <br />
+              Fax: +04 642 021 332
+            </p>
+          </div>
+        </div>
+
+        <div class="icon-content">
+          <div class="icon">
+            <img src="/images/email.svg" alt="" />
+          </div>
+          <div class="icon-heading">
+            <h5>Email</h5>
+            <p>
+              support@zytheme.com <br />
+              Twitter: @zytheme
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -447,7 +502,7 @@ section.services {
   padding-top: 5rem;
   padding-left: 6rem;
   padding-right: 6rem;
-  padding-bottom: 25rem;
+  padding-bottom: 30rem;
 }
 
 div.service-heading h3,
@@ -750,6 +805,46 @@ div.content1 p {
   padding-top: 1rem;
 }
 
+/* Map Styling */
+
+section.map {
+  padding-top: 5rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 10rem;
+}
+
+div.map-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.map-par h6 {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #222;
+}
+
+div.map-par p {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: #222;
+}
+
+/* Contact Styling */
+
+section.contact {
+  padding-top: 5rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-bottom: 20rem;
+}
+
 /* Responsiveness Styling */
 
 @media screen and (max-width: 768px) {
@@ -773,7 +868,6 @@ div.content1 p {
 
   /* services    */
   section.services {
-    padding-top: 5rem;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-bottom: 70rem;
@@ -820,7 +914,6 @@ div.content1 p {
   /* work */
 
   section.work {
-    padding-top: 5rem;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 110rem;
@@ -846,7 +939,6 @@ div.content1 p {
   /* Skills */
 
   section.skill {
-    padding-top: 5rem;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-bottom: 30rem;
@@ -874,7 +966,6 @@ div.content1 p {
   /* Background */
 
   div.background-container {
-    padding-top: 5rem;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-bottom: 5rem;
@@ -897,6 +988,64 @@ div.content1 p {
     font-size: 0.8rem;
     margin-top: 1.2rem;
   }
+
+  /* Testimonial */
+
+  section.testimonial {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 35rem;
+  }
+
+  div.testimonial-heading h3 {
+    font-size: 2rem;
+  }
+
+  div.testimonial-heading p {
+    font-size: 0.6rem;
+  }
+
+  div.testimonial-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.content1 {
+    padding-bottom: 1.5rem;
+  }
+
+  div.content1 h4 {
+    font-size: 1.1rem;
+  }
+
+  div.content1 p {
+    font-size: 0.8rem;
+    padding-top: 1rem;
+  }
+
+  /* Map */
+
+  section.map {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 10rem;
+  }
+
+  div.map-par h6 {
+    font-size: 1.2rem;
+  }
+
+  div.map-par p {
+    font-size: 0.6rem;
+  }
+
+  /* Contact */
+
+  section.contact {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 45rem;
+  }
 }
 
 @media screen and (max-width: 424px) {
@@ -915,7 +1064,6 @@ div.content1 p {
   /* Work */
 
   section.work {
-    padding-top: 5rem;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 300rem;
@@ -967,7 +1115,6 @@ div.content1 p {
   /* Work */
 
   section.work {
-    padding-top: 5rem;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 85rem;
@@ -996,7 +1143,6 @@ div.content1 p {
   /* skills */
 
   section.skill {
-    padding-top: 5rem;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-bottom: 30rem;
@@ -1018,6 +1164,16 @@ div.content1 p {
 
   div.background-content a {
     font-size: 0.8rem;
+  }
+
+  /* Testimonial */
+
+  section.testimonial {
+    padding-bottom: 40rem;
+  }
+
+  div.testimonial-heading h3 {
+    font-size: 1.7rem;
   }
 }
 </style>
