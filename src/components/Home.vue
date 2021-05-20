@@ -108,7 +108,7 @@
           pariature occaecat cupidatat proident culpa.
         </p>
       </div>
-      <div class="work-image-container">
+      <!-- <div class="work-image-container">
         <div class="image-content">
           <img src="/images/1.jpeg" alt="" class="image" />
           <div class="image-link"></div>
@@ -138,7 +138,7 @@
           <img src="/images/6.jpeg" alt="" class="image" />
           <div class="image-link"></div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <section class="skill" id="skill">
@@ -682,7 +682,7 @@ section.work {
   padding-top: 5rem;
   padding-left: 6rem;
   padding-right: 6rem;
-  padding-bottom: 65rem;
+  padding-bottom: 10rem;
 }
 
 div.work-image-container {
@@ -1024,23 +1024,8 @@ div.footer-social li a img {
   section.work {
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-bottom: 85rem;
+    padding-bottom: 10rem;
   }
-
-  /* div.work-image-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  } */
-
-  /* div.image-content {
-    width: 70%;
-    margin: 0.8rem;
-  }
-
-  div.image-content img {
-    width: 300px;
-  } */
 
   /* services */
 
@@ -1154,17 +1139,8 @@ div.footer-social li a img {
   section.work {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 80rem;
+    padding-bottom: 10rem;
   }
-
-  /* div.image-content {
-    width: 70%;
-    margin: 0.8rem;
-  }
-
-  div.image-content img {
-    width: 350px;
-  } */
 
   /* Skills */
 
@@ -1309,23 +1285,7 @@ div.footer-social li a img {
   section.work {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 300rem;
-  }
-
-  div.work-image-container {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  div.image-content {
-    width: 125%;
-  }
-
-  div.image-content img {
-    width: 310px;
+    padding-bottom: 10rem;
   }
 
   div.work-heading p {
@@ -1368,15 +1328,7 @@ div.footer-social li a img {
   section.work {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 85rem;
-  }
-
-  div.image-content {
-    width: 70%;
-  }
-
-  div.image-content img {
-    width: 220px;
+    padding-bottom: 15rem;
   }
 
   div.work-heading p {
