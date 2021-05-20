@@ -300,6 +300,29 @@
           </div>
         </div>
       </div>
+
+      <div class="footer">
+        <div class="border-footer"></div>
+        <div class="footer-content">
+          <div class="footer-copyright">
+            &#169; Zytheme 2016, All Rights Reserved.
+          </div>
+          <div class="footer-social">
+            <li>
+              <a href="#"><img src="images/facebook.svg" alt=""/></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/twitter.svg" alt=""/></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/pinterest.svg" alt=""/></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/instagram.svg" alt=""/></a>
+            </li>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -842,7 +865,48 @@ section.contact {
   padding-top: 5rem;
   padding-left: 8rem;
   padding-right: 8rem;
-  padding-bottom: 20rem;
+  padding-bottom: 30rem;
+}
+
+/* Footer Styling */
+
+div.footer {
+  padding-top: 3rem;
+}
+
+div.border-footer {
+  width: 100%;
+  height: 1px;
+  background: rgb(211, 209, 209);
+  margin-bottom: 2rem;
+}
+
+div.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.footer-copyright {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #222;
+}
+
+div.footer-social {
+  display: flex;
+}
+
+div.footer-social li {
+  list-style: none;
+  padding: 0 1rem;
+}
+
+div.footer-social li a {
+  text-decoration: none;
+}
+
+div.footer-social li a img {
+  width: 13px;
 }
 
 /* Responsiveness Styling */
@@ -1044,7 +1108,20 @@ section.contact {
   section.contact {
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-bottom: 45rem;
+    padding-bottom: 55rem;
+  }
+
+  /* Footer */
+
+  div.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.footer-social {
+    padding-top: 1rem;
   }
 }
 
@@ -1174,6 +1251,12 @@ section.contact {
 
   div.testimonial-heading h3 {
     font-size: 1.7rem;
+  }
+
+  /* Footer */
+
+  div.footer-copyright {
+    font-size: 0.7rem;
   }
 }
 </style>
