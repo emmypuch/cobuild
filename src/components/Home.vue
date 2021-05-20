@@ -469,6 +469,7 @@ div.toggle {
   border: 2px solid rgb(187, 184, 184);
   cursor: pointer;
   margin-top: 1rem;
+  display: none;
 }
 
 div.toggle span,
@@ -508,18 +509,11 @@ div.toggle span::after {
     display: flex;
     justify-content: space-between;
     padding: 1.4em;
-  }
-
-  /* nav#mainNav ul {
-    display: none;
-  } */
-
-  .div-toggle {
-    display: block;
-  }
-
-  nav#mainNav {
     min-height: 60px;
+  }
+
+  div.toggle {
+    display: block;
   }
 
   nav#mainNav ul {
@@ -1018,7 +1012,7 @@ div.footer-social li a img {
 
 /* Responsiveness Styling */
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   section.hero h2 {
     padding-top: 1em;
     font-size: 3rem;
@@ -1027,13 +1021,19 @@ div.footer-social li a img {
 
   /* work */
 
-  /* section.work {
+  section.work {
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-bottom: 55rem;
+    padding-bottom: 85rem;
   }
 
-  div.image-content {
+  /* div.work-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  } */
+
+  /* div.image-content {
     width: 70%;
     margin: 0.8rem;
   }
@@ -1154,25 +1154,17 @@ div.footer-social li a img {
   section.work {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 110rem;
+    padding-bottom: 80rem;
   }
 
-  div.work-image-container {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  div.image-content {
+  /* div.image-content {
     width: 70%;
     margin: 0.8rem;
   }
 
   div.image-content img {
-    width: 300px;
-  }
+    width: 350px;
+  } */
 
   /* Skills */
 
@@ -1318,6 +1310,14 @@ div.footer-social li a img {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 300rem;
+  }
+
+  div.work-image-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   div.image-content {
