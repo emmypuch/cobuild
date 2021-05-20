@@ -583,7 +583,7 @@ section.work {
   padding-top: 5rem;
   padding-left: 6rem;
   padding-right: 6rem;
-  padding-bottom: 65rem;
+  padding-bottom: 65rem !important;
 }
 
 div.work-image-container {
@@ -600,7 +600,7 @@ div.image-content {
 }
 
 div.image-content img {
-  width: 380px;
+  width: 380px !important;
   height: auto;
 }
 
@@ -788,7 +788,7 @@ div.background-content a:hover {
 /* Testimonial Styling */
 section.testimonial {
   padding-top: 5rem;
-  padding-left: 6rem;
+  padding-left: 7rem;
   padding-right: 6rem;
   padding-bottom: 25rem;
 }
@@ -809,8 +809,10 @@ div.testimonial-heading p {
 }
 
 div.testimonial-content {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
   margin-top: 3.5rem;
 }
 
