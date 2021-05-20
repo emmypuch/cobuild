@@ -12,9 +12,9 @@
         <li><a href="#testimonial">Testimonials</a></li>
         <li><a href="#map">Map</a></li>
       </ul>
-      <button class="nav-toggler">
+      <div class="toggle">
         <span></span>
-      </button>
+      </div>
     </nav>
 
     <section class="hero" id="home">
@@ -354,6 +354,29 @@ export default {
       }
     });
 
+    const navToggler = document.querySelector(".toggle");
+    const navMenu = document.querySelector("#mainNav ul");
+    const navLinks = document.querySelectorAll("#mainNav a");
+
+    allEventListners();
+
+    function allEventListners() {
+      navToggler.addEventListener("click", togglerClick);
+
+      navLinks.forEach((elem) => elem.addEventListener("click", navLinkClick));
+    }
+
+    function togglerClick() {
+      navToggler.classList.toggle("toggler-open");
+      navMenu.classList.toggle("open");
+    }
+
+    function navLinkClick() {
+      if (navMenu.classList.contains("open")) {
+        navToggler.click();
+      }
+    }
+
     const testimonialPage = document.querySelector(
       ".quotes-slide[data-slider-slide-index='1']"
     );
@@ -439,19 +462,18 @@ nav#mainNav ul li a:hover {
   color: #f5af00;
 }
 
-.nav-toggler {
-  border: 3px solid #f5af00;
+div.toggle {
+  background: red;
+  /* width: 30px; */
   padding: 5px;
-  background-color: transparent;
-  cursor: pointer;
   height: 39px;
-  display: none;
-  width: 45px;
+  border: 2px solid #fff;
+  cursor: pointer;
 }
 
-.nav-toggler span,
-.nav-toggler span:before,
-.nav-toggler span:after {
+div.toggle span,
+div.toggle span::before,
+div.toggle span::after {
   width: 28px;
   height: 3px;
   background-color: #f5af00;
@@ -459,41 +481,74 @@ nav#mainNav ul li a:hover {
   transition: 0.3s;
 }
 
-.nav-toggler span:before {
+div.toggle span::before {
   content: "";
-  transform: translateY(-9px);
+  transform: translateY(18px);
 }
 
-.nav-toggler span:after {
+div.toggle span::after {
   content: "";
   transform: translateY(6px);
 }
 
-.nav-toggler.toggler-open span {
+.div-toggle.toggle-open span {
   background-color: transparent;
 }
 
-.nav-toggler.toggler-open span:before {
+.div-toggle.toggle-open span::before {
   transform: translateY(0px) rotate(45deg);
 }
 
-.nav-toggler.toggler-open span:after {
+.div-toggle.toggle-open span::after {
   transform: translateY(-3px) rotate(-45deg);
 }
 
 @media screen and (max-width: 768px) {
   nav#mainNav {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-between;
     padding: 1.4em;
   }
 
-  nav#mainNav ul {
+  /* nav#mainNav ul {
     display: none;
+  } */
+
+  .div-toggle {
+    display: block;
   }
 
-  .nav-toggler {
-    display: block;
+  nav#mainNav {
+    min-height: 60px;
+  }
+
+  nav#mainNav ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 60px);
+    left: 0;
+    top: 60px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  nav#mainNav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  nav#mainNav ul li a {
+    padding: 25px;
+  }
+  nav#mainNav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  nav#mainNav ul.open {
+    max-height: 100vh;
+    overflow: visible;
   }
 }
 
