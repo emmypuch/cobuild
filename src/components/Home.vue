@@ -911,6 +911,73 @@ div.footer-social li a img {
 
 /* Responsiveness Styling */
 
+@media screen and (min-width: 769px) {
+  section.hero h2 {
+    padding-top: 1em;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  /* work */
+
+  section.work {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 55rem;
+  }
+
+  div.image-content {
+    width: 70%;
+    margin: 0.8rem;
+  }
+
+  div.image-content img {
+    width: 300px;
+  }
+
+  /* services */
+
+  div.icon-content {
+    margin-left: 1.2rem;
+  }
+
+  div.icon-heading p {
+    font-size: 0.6rem;
+  }
+
+  /* skills */
+
+  section.skill {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 25rem;
+  }
+
+  div.skill-heading {
+    margin-right: 1.3rem;
+  }
+
+  div.skill-heading h4 {
+    font-size: 2rem;
+  }
+
+  div.skill-heading p {
+    font-size: 1.1rem;
+  }
+
+  /* Background */
+
+  div.background-content h4 {
+    font-size: 1.3rem;
+  }
+
+  /* Testimonial */
+
+  section.testimonial {
+    padding-bottom: 30rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   section.hero {
     padding: 16em 0.6em;
