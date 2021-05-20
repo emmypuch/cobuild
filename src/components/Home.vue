@@ -463,12 +463,12 @@ nav#mainNav ul li a:hover {
 }
 
 div.toggle {
-  background: red;
-  /* width: 30px; */
+  background: #eee;
   padding: 5px;
   height: 39px;
-  border: 2px solid #fff;
+  border: 2px solid rgb(187, 184, 184);
   cursor: pointer;
+  margin-top: 1rem;
 }
 
 div.toggle span,
@@ -527,7 +527,7 @@ div.toggle span::after {
     width: 100%;
     height: calc(100vh - 60px);
     left: 0;
-    top: 60px;
+    top: 110px;
     flex-direction: column;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.75);
@@ -544,7 +544,8 @@ div.toggle span::after {
     padding: 25px;
   }
   nav#mainNav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    color: #f5af00;
   }
   nav#mainNav ul.open {
     max-height: 100vh;
