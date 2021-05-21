@@ -463,10 +463,11 @@ nav#mainNav ul li a:hover {
 }
 
 div.toggle {
-  background: #eee;
-  padding: 5px;
+  background: rgb(248, 246, 246);
+  padding: 8px 15px 5px 15px;
   height: 39px;
-  border: 2px solid rgb(187, 184, 184);
+  border: none;
+  border-radius: 7px;
   cursor: pointer;
   margin-top: 1rem;
   display: none;
