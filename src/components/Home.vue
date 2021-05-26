@@ -7,7 +7,6 @@
       <ul>
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#service">Services</a></li>
-        <li><a href="#work">Work</a></li>
         <li><a href="#skill">Skills</a></li>
         <li><a href="#testimonial">Testimonials</a></li>
         <li><a href="#map">Map</a></li>
@@ -95,18 +94,6 @@
             </p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="work" id="work">
-      <div class="work-heading">
-        <h3>Featured Work</h3>
-        <p>
-          Duis aute irure dolor in reprehenderit volupte velit esse cillum
-          fugiat
-          <br />
-          pariature occaecat cupidatat proident culpa.
-        </p>
       </div>
     </section>
 
@@ -646,15 +633,6 @@ div.icon-heading p {
   text-align: center;
 }
 
-/* Work styling */
-
-section.work {
-  padding-top: 5rem;
-  padding-left: 6rem;
-  padding-right: 6rem;
-  padding-bottom: 10rem;
-}
-
 /* Skill Styling */
 
 div.skill-heading h4 {
@@ -944,14 +922,6 @@ div.footer-social li a img {
     text-align: center;
   }
 
-  /* work */
-
-  section.work {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 10rem;
-  }
-
   /* services */
 
   div.icon-content {
@@ -1057,14 +1027,6 @@ div.footer-social li a img {
 
   div.icon-heading p {
     text-align: center;
-  }
-
-  /* work */
-
-  section.work {
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 10rem;
   }
 
   /* Skills */
@@ -1204,18 +1166,6 @@ div.footer-social li a img {
   div.par p {
     font-size: 0.8rem;
   }
-
-  /* Work */
-
-  section.work {
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 10rem;
-  }
-
-  div.work-heading p {
-    font-size: 0.585rem;
-  }
 }
 
 @media screen and (max-width: 400px) {
@@ -1246,26 +1196,6 @@ div.footer-social li a img {
 
   div.icon-heading p {
     font-size: 0.6rem;
-  }
-
-  /* Work */
-
-  section.work {
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 15rem;
-  }
-
-  div.work-heading p {
-    font-size: 0.585rem;
-  }
-
-  div.work-heading h3 {
-    font-size: 0.9rem;
-  }
-
-  div.work-heading p {
-    font-size: 0.5rem;
   }
 
   /* skills */
