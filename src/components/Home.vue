@@ -108,37 +108,6 @@
           pariature occaecat cupidatat proident culpa.
         </p>
       </div>
-      <!-- <div class="work-image-container">
-        <div class="image-content">
-          <img src="/images/1.jpeg" alt="" class="image" />
-          <div class="image-link"></div>
-        </div>
-
-        <div class="image-content">
-          <img src="/images/2.jpeg" alt="" class="image" />
-          <div class="image-link"></div>
-        </div>
-
-        <div class="image-content">
-          <img src="/images/3.jpeg" alt="" class="image" />
-          <div class="image-link"></div>
-        </div>
-
-        <div class="image-content">
-          <img src="/images/4.jpeg" alt="" class="image" />
-          <div class="image-link"></div>
-        </div>
-
-        <div class="image-content">
-          <img src="/images/5.jpeg" alt="" class="image" />
-          <div class="image-link"></div>
-        </div>
-
-        <div class="image-content">
-          <img src="/images/6.jpeg" alt="" class="image" />
-          <div class="image-link"></div>
-        </div>
-      </div> -->
     </section>
 
     <section class="skill" id="skill">
@@ -684,51 +653,6 @@ section.work {
   padding-left: 6rem;
   padding-right: 6rem;
   padding-bottom: 10rem;
-}
-
-div.work-image-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  align-items: center;
-  margin-top: 5rem;
-}
-
-div.image-content {
-  width: 50%;
-  margin: 1rem;
-}
-
-div.image-content img {
-  width: 380px;
-  height: auto;
-}
-
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-}
-
-div.image-link {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-div.image-content:hover .image {
-  opacity: 0.3;
-}
-
-div.image-content:hover div.image-link {
-  opacity: 1;
 }
 
 /* Skill Styling */
