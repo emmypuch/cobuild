@@ -23,8 +23,4 @@ export default {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
-#app {
-  /* margin-top: 60px; */
-}
 </style>
